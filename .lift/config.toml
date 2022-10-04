@@ -1,1 +1,2 @@
 customTools = [ ".lift/tool.sh", ".lift/markdown_tool.py" ]
+disableTools = ["Bill Of Materials"]
