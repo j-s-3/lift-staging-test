@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 dir=$1
 commit=$2
-cmd=$3 
+cmd=$3
 
 function version() {
     echo 1
@@ -12,6 +12,7 @@ function applicable() {
 }
 
 function run() {
+    sleep 30000
     echo "[{ \"type\": \"Hello Amy\", \
             \"message\": \"Lift is analyzing commit $commit\", \
             \"file\": \"file.txt\", \
@@ -20,12 +21,12 @@ function run() {
           }]"
 }
 
-if [[ "$cmd" = "run" ]] ; then 
-    run 
-fi 
-if [[ "$cmd" = "applicable" ]] ; then 
-    applicable 
-fi 
-if [[ "$cmd" = "version" ]] ; then 
-    version 
+if [[ "$cmd" = "run" ]] ; then
+    run
+fi
+if [[ "$cmd" = "applicable" ]] ; then
+    applicable
+fi
+if [[ "$cmd" = "version" ]] ; then
+    version
 fi
